@@ -41,4 +41,4 @@ async function displayPlanets(planets) {
     list.appendChild(listItem)
   })
 }
-//planets()
+planets()

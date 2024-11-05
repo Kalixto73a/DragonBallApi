@@ -3,7 +3,7 @@ async function characters() {
     const data  = await fetchCharactersAPI()
     const totalItems = data.meta.totalItems
     const newData = await fetchCharactersAPI(`?limit=${totalItems}`)
-    //displayCharacters(newData.items)
+    displayCharacters(newData.items)
 }
 async function fetchCharactersAPI(limit = "") {
   const res = await fetch(`${REQUESTCHARACTERS}${limit}`)
