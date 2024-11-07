@@ -10,6 +10,8 @@ https://web.dragonball-api.com/
 · Personajes: Nombre, Genero, Imagen del personaje, Raza, Ki, Ki maximo y Afiliación.
 
 · Planetas: Nombre, imagen y si esta destruido o no.
+
+![Image](https://res.cloudinary.com/dzfqdntdw/image/upload/v1731013364/DragonBallAPI.png)
 ## Como instalarlo
 
 Instalar mi proyecto con GIT
