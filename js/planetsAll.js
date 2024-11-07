@@ -16,8 +16,9 @@ async function displayPlanets(planets) {
     const listItem = document.createElement("div")
     listItem.classList.add("bg-[#3c3e44]", "shadow-lg", "rounded-lg", "overflow-hidden");
 
+
     const listName = document.createElement("div")
-    listName.textContent = planets.name
+    listName.innerHTML = planets.name
     listName.classList.add("text-3xl", "text-white", "ml-2", "mr-2")
     
     const listIsDestroyed = document.createElement("div")
@@ -33,6 +34,7 @@ async function displayPlanets(planets) {
 
     listItem.appendChild(listImage)
     listItem.appendChild(listName)
+   
     listItem.appendChild(listIsDestroyed)
     listItem.appendChild(listDeletedAt)
     list.appendChild(listItem)
