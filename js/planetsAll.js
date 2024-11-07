@@ -34,7 +34,6 @@ async function displayPlanets(planets) {
 
     listItem.appendChild(listImage)
     listItem.appendChild(listName)
-   
     listItem.appendChild(listIsDestroyed)
     listItem.appendChild(listDeletedAt)
     list.appendChild(listItem)
