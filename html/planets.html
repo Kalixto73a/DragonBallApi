@@ -5,30 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DragonBallAPIPlanets</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
+    <header class="flex flex-wrap items-center justify-center gap-10 p-3 bg-[#576478]">
         <div>
-            <img src="../imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu">
+          <img src="../imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu" class="h-20 rounded-full"/>
         </div>
-        <h1>DragonBallAPI</h1>
+      <h1 class="text-aling=center text-5xl">DragonBallAPI</h1>
+      <div>
+        <img src="../imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu" class="h-20 rounded-full"/>
+      </div>
+      </header>
+    <main class="bg-[#272b33]">
         <div>
-            <img src="../imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu">
+            ‎ 
         </div>
-    </header>
-    <main>
-        <div id="appPlanets"></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 m-6" id="appPlanets"></div>
+        <div>
+            ‎ 
+        </div>
     </main>
-    <footer>
-        <button>
-            <a href="../index.html">HomePage</a>
-        </button>
-        <button>
-            <a href="./characters.html">Characters</a>
-        </button>
-    </footer>
+    <footer class="bg-[#576478]">
+        <div class="flex flex-wrap justify-center items-center">
+          <a href="https://github.com/Kalixto73a">
+            <img class="transform rounded-full h-20" src="../imgHtml/imgFooter/logoGithub.png" alt="">
+          </a>        
+          <a href="https://www.linkedin.com/in/álvaro-cervera-vigara-745576337/?trk=nav_responsive_tab_profile_pic&originalSubdomain=es">
+            <img class="transform rounded-full h-14 " src="../imgHtml/imgFooter/logoLinkedIn.png" alt="">
+          </a>
+          <div class="justify-end text-xl p-4 text-sm">
+            Copyright (c) 2024 Kalixto73a
+          </div>
+        </div>
+      </footer>
     <div><script src="../js/planetsAll.js" type="module"></script></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

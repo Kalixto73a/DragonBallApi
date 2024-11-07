@@ -13,45 +13,50 @@ async function fetchCharactersAPI(limit = "") {
 async function displayCharacters(characters) {
   const list = document.getElementById("appCharacters")
   characters.forEach((character) => {
-    const listItem = document.createElement("li")
+    const listItem = document.createElement("div")
+    listItem.classList.add("bg-[#3c3e44]", "shadow-lg", "rounded-lg", "overflow-hidden");
 
     const listName = document.createElement("div")
-    listName.setAttribute("textContent", character.name)
+    listName.textContent = character.name
+    listName.classList.add("text-3xl", "text-white", "ml-2", "mr-2")
 
     const listImage = document.createElement("img")
     listImage.setAttribute("src", character.image)
+    listImage.classList.add("h-svh","items-center", "rounded-md", "w-full", "bg-white");
 
     const listKi = document.createElement("div")
-    listKi.setAttribute("textContent", character.Ki)
+    listKi.textContent = `Ki: ${character.ki}`
+    listKi.classList.add("text-xl", "text-yellow-400", "ml-2", "mr-2")
 
     const listMaxKi = document.createElement("div")
-    listMaxKi.setAttribute("textContent", character.maxKi)
+    listMaxKi.textContent = `MaxKi: ${character.maxKi}`
+    listMaxKi.classList.add("text-xl", "text-yellow-400", "ml-2", "mr-2")
 
     const listRace = document.createElement("div")
-    listRace.setAttribute("textContent", character.race)
+    listRace.textContent = character.race
+    listRace.classList.add("text-xl", "text-yellow-400", "ml-2", "mr-2")
 
     const listGender = document.createElement("div")
-    listGender.setAttribute("textContent", character.gender)
-
-    const listDescription = document.createElement("div")
-    listDescription.setAttribute("textContent", character.description)
+    listGender.textContent = character.gender
+    listGender.classList.add("text-xl", "text-yellow-400", "ml-2", "mr-2")
 
     const listAffiliation = document.createElement("div")
-    listAffiliation.setAttribute("textContent", character.affiliation)
+    listAffiliation.textContent = character.affiliation
+    listAffiliation.classList.add("text-xl", "text-yellow-400", "ml-2", "mr-2", "mb-2")
 
     const listDeletedAt = document.createElement("div")
-    listDeletedAt.setAttribute("textContent", character.DeletedAt)
+    listDeletedAt.textContent = character.DeletedAt
 
+    listItem.appendChild(listImage)
     listItem.appendChild(listName)
+    listItem.appendChild(listGender)
+    listItem.appendChild(listRace)
     listItem.appendChild(listKi)
     listItem.appendChild(listMaxKi)
-    listItem.appendChild(listRace)
-    listItem.appendChild(listGender)
-    listItem.appendChild(listDescription)
-    listItem.appendChild(listImage)
     listItem.appendChild(listAffiliation)
     listItem.appendChild(listDeletedAt)
     list.appendChild(listItem)
   })
 }
 characters()
+

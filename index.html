@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DragonBallAPI</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-    <header>
-        <div>
-            <img src="./imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu">
-        </div>
-        <h1>DragonBallAPI</h1>
-        <div>
-            <img src="./imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu">
-        </div>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="flex flex-wrap items-center justify-center gap-10 p-3 bg-[#ffffff]">
+      <div>
+        <img src="./imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu" class="h-20 rounded-full"/>
+      </div>
+    <h1 class="text-aling=center text-5xl">DragonBallAPI</h1>
+    <div>
+      <img src="./imgHtml/imgHeader/logoHeader.jpg" alt="Kanji de Tortu" class="h-20 rounded-full"/>
+    </div>
     </header>
-    <main>
-        <button>
-            <a href="./html/characters.html">Characters</a>
-        </button>
-        <button>
-            <a href="./html/planets.html">Planets</a>
-        </button>
+    <main class="flex flex-wrap items-center justify-center gap-24 bg-[#272b33] pt-7 pb-24">
+    <a href="./html/characters.html">
+      <button class="bg-[url(https://img.freepik.com/vector-gratis/fondo-efecto-zoom-degradado_23-2149737547.jpg)] p-6 rounded-lg bg-center bg-cover">
+        <div class="transform hover:scale-110 transition-transform duration-500 text-3xl">
+          Characters
+          <img class="h-svh transform hover:scale-110 transition-transform duration-500" src="https://dragonball-api.com/characters/goku_normal.webp" alt="El personaje principal Goku, pelo negro, vestido de naranja y azul"/>
+        </div>
+      </button>
+    </a>
+    <a href="./html/planets.html">
+      <button class="bg-[url(./imgHtml/imgMain/backgroundPlanets.png)] p-6 rounded-lg bg-center bg-cover">
+        <div class="transform hover:scale-110 transition-transform duration-500 text-3xl">
+          Planets
+          <img class="h-svh transform hover:scale-110 transition-transform duration-500" src="./imgHtml/imgMain/imgPlanets.webp" alt="Imagen de planeta verde llamado Namek"/>
+        </div>
+      </button>
+    </a>
     </main>
-    <footer>
-        
+    <footer class="bg-[#ffffff]">
+      <div class="flex flex-wrap justify-center items-center">
+        <a href="https://github.com/Kalixto73a">
+          <img class="transform rounded-full h-20" src="./imgHtml/imgFooter/logoGithub.png" alt="">
+        </a>        
+        <a href="https://www.linkedin.com/in/álvaro-cervera-vigara-745576337/?trk=nav_responsive_tab_profile_pic&originalSubdomain=es">
+          <img class="transform rounded-full h-14 " src="./imgHtml/imgFooter/logoLinkedIn.png" alt="">
+        </a>
+        <div class="justify-end text-xl p-4 text-sm">
+          Copyright (c) 2024 Kalixto73a
+        </div>
+      </div>
     </footer>
-    <div><script src="./js/charactersAll.js" type="module"></script></div>
-    <div><script src="./js/planetsAll.js" type="module"></script></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
