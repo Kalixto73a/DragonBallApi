@@ -55,12 +55,23 @@ async function displayPlanets(planets) {
       "bg-white"
     )
 
+    const listDescription = document.createElement("div")
+    listDescription.textContent = planets.description
+    listDescription.classList.add(
+      "text-xl",
+      "text-yellow-400",
+      "mb-4",
+      "ml-2",
+      "mr-2"
+    )
+
     const listDeletedAt = document.createElement("div")
     listDeletedAt.textContent = planets.deletedAt
 
     listItem.appendChild(listImage)
     listItem.appendChild(listName)
     listItem.appendChild(listIsDestroyed)
+    listItem.appendChild(listDescription)
     listItem.appendChild(listDeletedAt)
     list.appendChild(listItem)
   })
